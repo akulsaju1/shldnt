@@ -29,24 +29,24 @@ export default function MembersPage() {
         </div>
       </header>
 
-      <section className="border-b border-[#d9e3ef] bg-[radial-gradient(circle_at_80%_0%,rgba(103,232,249,.22),transparent_24rem),linear-gradient(135deg,#eef7ff_0%,#fbfdff_52%,#f0efff_100%)]">
+      <section style={{ background: 'linear-gradient(135deg, #071426 0%, #123d73 56%, #1d285f 100%)' }} className="border-b border-[#1d4d82] text-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-[1fr_280px] lg:px-8 lg:py-24">
           <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#286095]">Federation registry · 2027</p>
-            <h1 className="mt-5 max-w-4xl text-5xl font-semibold tracking-[-0.06em] text-[#10233f] sm:text-7xl">National Hackathon Associations</h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#355474]">A public directory of the countries and territories eligible to establish or operate a National Hackathon Association.</p>
+            <p style={{ color: '#a5f3fc' }} className="text-[11px] font-bold uppercase tracking-[0.2em]">Federation registry · 2027</p>
+            <h1 style={{ color: '#ffffff' }} className="mt-5 max-w-4xl text-5xl font-semibold tracking-[-0.06em] sm:text-7xl">National Hackathon Associations</h1>
+            <p style={{ color: '#dbeafe' }} className="mt-6 max-w-2xl text-lg leading-8">A public directory of the countries and territories eligible to establish or operate a National Hackathon Association.</p>
             <div className="mt-10 flex max-w-2xl flex-col gap-3 sm:flex-row">
               <label className="sr-only" htmlFor="country-search">Search countries</label>
-              <input id="country-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search countries" className="h-14 flex-1 rounded-2xl border border-[#aabed4] bg-white px-5 text-[#10233f] shadow-sm outline-none ring-[#61c8dc] placeholder:text-[#6b829d] focus:ring-2" />
-              <div className="members-count flex h-14 items-center justify-center rounded-2xl border border-[#b7c9dc] bg-white px-5 text-sm font-semibold text-[#28496e]">{filtered.length} countries</div>
+              <input id="country-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search countries" className="h-14 flex-1 rounded-2xl border border-white/30 bg-white px-5 text-[#10233f] shadow-sm outline-none ring-[#67e8f9] placeholder:text-[#6b829d] focus:ring-2" />
+              <div className="members-count flex h-14 items-center justify-center rounded-2xl border border-white/20 bg-[#1b4e88] px-5 text-sm font-semibold text-white">{filtered.length} countries</div>
             </div>
           </div>
-          <aside className="rounded-[1.75rem] border border-[#c6d6e8] bg-white/80 p-6 shadow-[0_20px_50px_rgba(35,71,112,.1)]">
-            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#35749a]">Registry status</p>
-            <p className="mt-5 text-4xl font-semibold tracking-[-0.06em] text-[#10233f]">Global</p>
-            <p className="mt-2 text-sm leading-6 text-[#526b87]">One shared standard for national hackathon communities worldwide.</p>
-            <div className="mt-6 h-px bg-[#d7e2ee]" />
-            <p className="mt-5 text-xs font-semibold uppercase tracking-[0.14em] text-[#496987]">Open directory</p>
+          <aside className="rounded-[1.75rem] border border-white/20 bg-[#0b2345]/75 p-6 shadow-[0_20px_50px_rgba(0,0,0,.22)] backdrop-blur-sm">
+            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#a5f3fc]">Registry status</p>
+            <p className="mt-5 text-4xl font-semibold tracking-[-0.06em] text-white">Global</p>
+            <p className="mt-2 text-sm leading-6 text-[#dbeafe]">One shared standard for national hackathon communities worldwide.</p>
+            <div className="mt-6 h-px bg-white/20" />
+            <p className="mt-5 text-xs font-semibold uppercase tracking-[0.14em] text-[#bae6fd]">Open directory</p>
           </aside>
         </div>
       </section>
